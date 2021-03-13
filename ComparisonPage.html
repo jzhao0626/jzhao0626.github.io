@@ -3,15 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>LandingPage</title>
+    <title>ComparisonPage</title>
 
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 
 </head>
-
-
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
@@ -46,48 +44,55 @@
     <br>
 
     <div class="row">
-      
-        <div class="col-md-1"></div>
 
-        <div class="col-md-7 content">
+
+        <div class="col-md-10 content">
+                            
+            <h1>Comparison: Latitude vs. [Climate Factors]</h1>
+            <hr>
+            <p>Click any plot to get an in-depth analysis.</p>
             
-            <h1>Summary: Latitude vs. [Climate Factors]</h1>
-            <hr>
-            <article>
-                <img src="Resources/assets/images/Fig1.png" alt="Tempurature Map" class="big_img" width=50% style="float: left">
-                <br>
-                <p>In this project, we created a Python script to visualize and analyze various climate factors of over 500 cities across the world of varying distance from the equator. To accomplish this analysis, we utilized several Python libraries, the OpenWeatherMap API, and some statistical analysis techniques to create a representative model of weather across world cities.</p>
-                <p>To elaborate on the whole processes, we pulled weather data from the OpenWeatherMap API to assemble a dataset with Pandas on over 500 cities. Then, we used Matplotlib to plot various climate factors vs. latitude, which include max temperature, humidity, cloudiness, and wind speed. Next off, we performed linear regression on each climate factor vs. latitude for our analysis. The result is shown in depth on each visualization page.</p>
-            </article>
-        </div>
-        
-        
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>vs. Max Temperature</h2>
+                    <a href="VisualizationPage_MaxTemp.html">
+                        <img src="Resources/assets/images/Fig1.png" alt="Tempurature Map" class="big_img">
+                    </a>
+                </div>
 
-        <div class="col-md-3 content">
-            <h1>Visualizations</h1>
-            <article>
-            <hr>
-                <a href="VisualizationPage_MaxTemp.html">
-                    <img src="Resources/assets/images/Fig1.png" alt="Tempurature Map" class="small_img">
-                </a>
-                <a href="VisualizationPage_Humidity.html">
-                    <img src="Resources/assets/images/Fig2.png" alt="Humidity Map" class="small_img">
-                </a>
-                <a href="VisualizationPage_Cloudiness.html">
-                    <img src="Resources/assets/images/Fig3.png" alt="Cloudiness Map" class="small_img">
-                </a>
-                <a href="VisualizationPage_WindSpeed.html">
-                    <img src="Resources/assets/images/Fig4.png" alt="WindSpeed Map" class="small_img">
-                </a>
+                <div class="col-md-6">
+                    <h2>vs. Humidity</h2>
+                    <a href="VisualizationPage_Humidity.html">
+                        <img src="Resources/assets/images/Fig2.png" alt="Humidity Map" class="big_img">
+                    </a>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>vs. Cloudiness</h2>
+                    <a href="VisualizationPage_Cloudiness.html">
+                        <img src="Resources/assets/images/Fig3.png" alt="Cloudiness Map" class="big_img">
+                    </a>
+                </div>
+                
+                <div class="col-md-6">
+                    <h2>vs. Wind Speed</h2>
+                    <a href="VisualizationPage_WindSpeed.html">
+                        <img src="Resources/assets/images/Fig4.png" alt="WindSpeed Map" class="big_img">
+                    </a>
+                </div>
+            </div>
+                
+                
             </article>
         </div>
-        <div class="col-md-1"></div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+        
 </body>
 
 </html>

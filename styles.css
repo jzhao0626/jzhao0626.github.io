@@ -1,0 +1,105 @@
+body {
+    background: #cbf1f5;
+    /* background-image: url('https://thumbs.dreamstime.com/z/background-landscape-field-bush-clouds-sun-sky-cartoon-vector-illustration-background-landscape-field-bush-clouds-sun-sky-cartoon-171497715.jpg') */
+  }
+  
+h1 {
+    color: #71c9ce;
+    font-size: 25px;
+    padding: 20px 0px 5px 5px;
+    font-weight: bold;
+}
+
+h2 {
+  color: #71c9ce;
+  font-size: 20px;
+  padding: 20px 0px 5px 5px;
+  text-align: center;
+}
+
+.big_img {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.small_img {
+  max-width:49%;
+  max-height:50%;
+  padding: 15px;
+}
+
+.right_align {
+  float: right;
+}
+
+.content {
+  background:#e3fdfd;
+  padding: 10px 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  border: 3px;
+  border-style:double;
+  border-color: rgb(158, 211, 193);
+}
+
+.table_content {
+  background:#e3fdfd;
+  margin: 60px 10px 60px 10px;
+  border: 3px;
+  border-style: solid;
+  border-color: rgb(158, 211, 193);
+}
+
+.navbar-custom { 
+  color: rgb(116, 186, 162);
+  font-weight: bold;
+  background: #a6e3e9;
+  padding:0px;
+  margin:0px;
+}
+
+.navbar-custom-table { 
+  color: rgb(116, 186, 162);
+  font-weight: bold;
+  background: #a6e3e9;
+}
+
+.table_setting {
+  width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .table_body {
+    background: #e3fdfd;
+  }
+  
+  .table_content {
+    background:#e3fdfd;
+    margin: 0px 10px 0px 10px;
+    border: 0px;
+  }
+
+  .navbar-custom-table { 
+    color: rgb(116, 186, 162);
+    font-weight: bold;
+    background: #e3fdfd;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    background: #e3fdfd;
+  }
+
+  .content {
+    background: #e3fdfd;
+    margin: 0px 30px 0px 30px;
+    border: 0px;
+  }
+}
