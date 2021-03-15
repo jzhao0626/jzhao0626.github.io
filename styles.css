@@ -1,7 +1,11 @@
 body {
     background: #cbf1f5;
-    /* background-image: url('https://thumbs.dreamstime.com/z/background-landscape-field-bush-clouds-sun-sky-cartoon-vector-illustration-background-landscape-field-bush-clouds-sun-sky-cartoon-171497715.jpg') */
-  }
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width:100%;
+    
+}
   
 h1 {
     color: #71c9ce;
@@ -30,10 +34,6 @@ h2 {
   max-width:49%;
   max-height:50%;
   padding: 15px;
-}
-
-.right_align {
-  float: right;
 }
 
 .content {
@@ -72,7 +72,7 @@ h2 {
   width: 100%;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   .table_body {
     background: #e3fdfd;
   }
